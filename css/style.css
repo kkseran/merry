@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #444;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 390px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+#a {
+  width: 100%;
+  padding: 70px 0px;
+}
+#a h1 {
+  padding: 80px 0px;
+  font: 500 30px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+#a h1 span:nth-of-type(1) {
+  position: relative;
+}
+#a h1 span:nth-of-type(1)::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #888;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#a img {
+  width: 90%;
+  margin-bottom: 30px;
+}
+#a p {
+  padding: 40px 0px;
+  font: normal 19px/1.5 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#a p:last-of-type {
+  font: normal 12px/1.5 "Noto Serif KR";
+  letter-spacing: 2px;
+}
+
+#b {
+  width: 100%;
+  min-height: 300px;
+  padding: 100px 0px;
+  background-color: rgba(255, 236, 236, 0.26);
+  position: relative;
+}
+#b .head {
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  font: 500 14px/1 "Noto Serif KR";
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+#b .head::after {
+  content: "";
+  width: calc(100% - 60px);
+  height: 1px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+}
+#b h2 {
+  padding: 60px 0px;
+  margin-top: 20px;
+  font: 500 32px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#b p {
+  padding: 30px 0px;
+  font: 500 16px/2 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#b h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  font: 500 20px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#b h3 p {
+  display: flex;
+  flex-direction: column;
+  font: 500 18px/1.4 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#b h3 em {
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#c {
+  width: 100%;
+  min-height: 300px;
+  padding: 100px 0px;
+  position: relative;
+}
+#c .head {
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  font: 500 14px/1 "Noto Serif KR";
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+#c .head::after {
+  content: "";
+  width: calc(100% - 60px);
+  height: 1px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+}
+#c h2 {
+  padding: 70px 0px;
+  font: 500 32px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#c .tel {
+  width: 300px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #aaa;
+  border-bottom: none;
+  padding: 10px 20px;
+  font: 400 16px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#c .tel:last-of-type {
+  border-bottom: 1px solid #aaa;
+}
+#c .tel:nth-of-type(4) {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #aaa;
+}
+#c .tel span:last-of-type {
+  display: flex;
+  gap: 15px;
+}
+#c .tel span:last-of-type a img {
+  width: 25px;
+}
+
+#d {
+  width: 100%;
+  min-height: 600px;
+  padding: 100px 0px;
+  position: relative;
+  background-image: url(../img_calendar_t1c1_bg.jpg);
+  background-position: center 15%;
+  background-size: cover;
+}
+#d .head {
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  font: 500 14px/1 "Noto Serif KR";
+  letter-spacing: 3px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+}
+#d .calendar {
+  width: 90%;
+  height: 500px;
+  margin: 0px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+#d .calendar .calendar_ym {
+  font: 500 18px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+  padding: 30px 0px;
+}
+#d .calendar table {
+  width: 100%;
+  height: 80%;
+}
+#d .calendar table caption {
+  position: absolute;
+  left: -999999px;
+  opacity: 0;
+}
+#d .calendar tbody {
+  font: normal 18px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#d .calendar tbody tr .header {
+  font-weight: 500;
+  color: #666;
+}
+#d .calendar tbody tr .cir {
+  position: relative;
+}
+#d .calendar tbody tr .cir::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  background-color: rgba(214, 167, 167, 0.76);
+  z-index: 1;
+}
+#d .calendar tbody tr .cir span {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+}
+
+#e {
+  width: 100%;
+  padding: 100px 0px;
+  position: relative;
+}
+#e .head {
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  font: 500 14px/1 "Noto Serif KR";
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+#e .head::after {
+  content: "";
+  width: calc(100% - 60px);
+  height: 1px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+}
+#e h2 {
+  padding: 50px 0px;
+  font: 500 32px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#e .mySwiper2 {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 30px;
+}
+#e .mySwiper2 .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#e .mySwiper2 .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+#e .mySwiper2 .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#e .mySwiper2 .swiper-pagination .swiper-pagination-bullet-active-main {
+  background-color: rgb(238, 197, 192);
+}
+#e .mySwiper {
+  width: 100%;
+  height: 100px;
+}
+#e .mySwiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#e .mySwiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#f {
+  width: 100%;
+  padding: 100px 0px;
+  position: relative;
+}
+#f .head {
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  font: 500 14px/1 "Noto Serif KR";
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+#f .head::after {
+  content: "";
+  width: calc(100% - 60px);
+  height: 1px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+}
+#f h2 {
+  padding: 60px 0px;
+  font: 500 32px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#f > span {
+  font: 400 20px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#f img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#g {
+  width: 100%;
+  padding: 100px 0px;
+  min-height: 650px;
+  background-color: rgba(255, 236, 236, 0.26);
+  position: relative;
+}
+#g .head {
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  font: 500 14px/1 "Noto Serif KR";
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+#g .head::after {
+  content: "";
+  width: calc(100% - 60px);
+  height: 1px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+}
+#g h2 {
+  padding: 70px 0px;
+  font: 500 32px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#g .drop {
+  width: 300px;
+  margin: 0px auto 20px;
+  font: 500 16px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+  text-align: left;
+}
+#g .drop.on .qqq .aa {
+  transform: rotate(45deg);
+}
+#g .drop p {
+  border: 1px solid #aaa;
+  padding: 20px;
+  background-color: #fff;
+}
+#g .drop .qqq {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#g .drop .qqq .aa {
+  width: 15px;
+  height: 15px;
+  border-top: 1.5px solid #aaa;
+  border-left: 1.5px solid #aaa;
+  transform: rotate(225deg);
+  transition: all 0.5s;
+}
+#g .drop .num {
+  display: none;
+  border-top: none;
+}
+
+#h {
+  width: 100%;
+  padding: 100px 0px;
+  min-height: 400px;
+  position: relative;
+}
+#h h2 {
+  padding: 40px 0px;
+  font: 500 32px/1 "Noto Serif KR";
+  letter-spacing: 1px;
+}
+#h ul {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+#h ul li {
+  text-align: center;
+}
+#h ul li a img {
+  width: 60px;
+}
+#h p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font: 400 18px/1 "Noto Serif KR";
+  font-style: italic;
+  letter-spacing: 2px;
+}
+#h p i {
+  font-size: 22px;
+}
+
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: #222;
+  padding-top: 90px;
+  position: relative;
+}
+footer::before {
+  display: block;
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: #999;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*# sourceMappingURL=style.css.map */
