@@ -224,6 +224,12 @@ body {
   font: normal 18px/1 "Noto Serif KR";
   letter-spacing: 1px;
 }
+#d .calendar table tbody tr th {
+  height: 55px;
+}
+#d .calendar table tbody tr td {
+  height: 56px;
+}
 #d .calendar table tbody tr .header {
   font-weight: 500;
   color: #666;

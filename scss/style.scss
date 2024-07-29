@@ -221,6 +221,12 @@ body {
 				font: normal 18px/1 'Noto Serif KR';
 				letter-spacing: 1px;
 				tr {
+					th {
+						height: 55px;
+					}
+					td {
+						height: 56px;
+					}
 					.header {
 						font-weight: 500;
 						color: #666;
